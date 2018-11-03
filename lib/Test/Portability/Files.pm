@@ -171,7 +171,7 @@ C<test_vms_length> is enabled
 
 =item *
 
-C<windows_reserved> is enabled
+C<test_windows_reserved> is enabled
 
 =back
 
@@ -273,6 +273,10 @@ C<test_symlink> - check that the file is not a symbolic link.
 
 C<test_vms_length> - check that the name fits within VMS name length limitations
 (39 characters max for the base name, 39 characters max for the extension).
+
+C<test_windows_reserved> - check that the file name is not one of the
+reserved Windows filenames that correspond to character devices, such
+as F<con> or F<com1>.
 
 =back
 
