@@ -85,6 +85,10 @@ my %errors_text =
     case => "The name of these files differ only by the case, which can\n"
         . "cause real problems on case-insensitive filesystems:",
 
+    windows_reserved =>
+        "These files have names that correspond to reserved character devices\n"
+         . "on Windows, and can cause unexpected problems:",
+
     'symlink' => "The following files are symbolic links, which are not\n"
         . "supported on several operating systems:",
     );
